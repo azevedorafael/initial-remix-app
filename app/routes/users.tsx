@@ -6,15 +6,15 @@ import { UsersList } from "~/features/Users/UsersList";
 export async function loader() {
   return json({
     users: await getUsers(),
-  });
+  })
 }
 
 export default function Users() {
-  const { users } = useLoaderData<typeof loader>();
+  const { users } = useLoaderData<typeof loader>()
 
   return (
   <>
-    <UsersList users={users} />;
+    <UsersList users={users} />
   </>
   )
 }

@@ -1,4 +1,4 @@
-import { User } from "./users.api.server";
+import { User } from "@prisma/client";
 import { Link, Outlet, useLocation } from "@remix-run/react";
 
 interface Props {
