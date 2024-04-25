@@ -1,5 +1,6 @@
 import {
   Links,
+  LiveReload,
   Meta,
   Outlet,
   Scripts,
@@ -16,9 +17,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
-        <ScrollRestoration />
+      {children}
         <Scripts />
+        <ScrollRestoration />
+        <LiveReload />
       </body>
     </html>
   );
